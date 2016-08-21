@@ -12,6 +12,11 @@ class Lib_Redis {
 		var_dump($result);    //结果：bool(true)  
 	}
 
+	public function getValue(){
+		$result = $this->redis->get("test");
+		var_dump($result);
+	}
+
 
 
 }
